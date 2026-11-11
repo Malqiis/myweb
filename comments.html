@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Leave feedback on Qis's personal portfolio.">
+  <title>Your Comments | Qis.exe ♡</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a class="logo" href="index.html">aqish<span>.exe</span> ♡</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">
+      ☰ <span class="sr-only">Toggle navigation</span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="biodata.html">My Biodata</a>
+      <a href="portfolio.html">My Portfolio</a>
+      <a href="video.html">My Video</a>
+      <a class="active" href="comments.html">Your Comments</a>
+    </nav>
+    <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme">
+      ☾ <span>Dark mode</span>
+    </button>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container page-main">
+    
+    <!-- PAGE INTRO -->
+    <section class="page-intro">
+      <p class="eyebrow">your thoughts matter</p>
+      <h1>Your <span class="pink-text">Comments</span> ♡</h1>
+      <p>Thank you for visiting my page. Share feedback or say hello!</p>
+    </section>
+
+    <!-- FORM LAYOUT -->
+    <section class="form-layout">
+      
+      <!-- FORM INTRO / SIDEBAR -->
+      <div class="form-intro card-surface">
+        <span class="big-heart">♡</span>
+        <h2>Let's make it better</h2>
+        <p class="small"> For further look out, just click on my social media username. </p>
+       
+        <div class="contact-detail">
+          <span>✉</span>
+          <div>
+            <strong>Email</strong>
+            <p>insyiraahb@gmail.com</p>
+          </div>
+        </div>
+        
+        <div class="contact-detail">
+  <span>⌘</span>
+  <div>
+    <strong>GitHub</strong>
+    <p><a href="https://github.com/Malqiis" target="_blank" rel="noopener noreferrer">Malqiis</a></p>
+  </div>
+</div>
+
+         <div class="contact-detail">
+          <span>ᕷ</span>
+          <div>
+            <strong>TikTok</strong>
+            <p><a href="https://www.tiktok.com/@Miauuuuu058" target="_blank" rel="noopener noreferrer">@Miauuuuu058</a></p>
+          </div>
+        </div>
+        
+        <div class="contact-detail">
+          <span>.✦ ݁˖</span>
+          <div>
+            <strong>Instagram</strong>
+             <p><a href="https://www.instagram.com/aqhise/" target="_blank" rel="noopener noreferrer">@aqhise</a></p>
+          </div>
+        </div>
+        <p class="small-note"></p>
+      </div>
+
+      <!-- COMMENT FORM -->
+      <form class="comment-form card-surface" id="comment-form">
+        <p>Your feedback helps me improve my design and development skills. Fields marked with * are required.</p>
+        <div class="form-row">
+          <label for="visitor-name">Your name *</label>
+          <input id="visitor-name" name="name" type="text" placeholder="Name or nickname" required maxlength="60">
+        </div>
+        
+        <div class="form-row">
+          <label for="visitor-email">Email (optional)</label>
+          <input id="visitor-email" name="email" type="email" placeholder="you@example.com" maxlength="120">
+          <small>Only enter an email if you are comfortable sharing it on this device.</small>
+        </div>
+        
+        <div class="form-row">
+          <label for="comment-topic">What is your feedback about? *</label>
+          <select id="comment-topic" name="topic" required>
+            <option value="">Choose a topic</option>
+            <option>Website design</option>
+            <option>My projects</option>
+            <option>Video / multimedia</option>
+            <option>Suggestion</option>
+            <option>Just saying hello</option>
+            <option>I miss you qish</option>
+          </select>
+        </div>
+        
+        <fieldset class="form-row rating-field">
+          <legend>Rate my website *</legend>
+          <div class="rating-options">
+            <label><input type="radio" name="rating" value="1" required><span>★</span></label>
+            <label><input type="radio" name="rating" value="2"><span>★★</span></label>
+            <label><input type="radio" name="rating" value="3"><span>★★★</span></label>
+            <label><input type="radio" name="rating" value="4"><span>★★★★</span></label>
+            <label><input type="radio" name="rating" value="5"><span>★★★★★</span></label>
+          </div>
+        </fieldset>
+        
+        <div class="form-row">
+          <label for="visitor-message">Your comment *</label>
+          <textarea id="visitor-message" name="message" rows="5" placeholder="Write your feedback here..." required maxlength="1000"></textarea>
+          <small><span id="char-count">0</span>/500 characters</small>
+        </div>
+        
+        <label class="consent-line">
+          <input type="checkbox" id="consent" required> I understand this demo form does send my message to a server. *
+        </label>
+        
+        <button class="button button-primary submit-button" type="submit">Preview my comment ♡</button>
+        
+        <p class="form-note"></p>
+        
+        <div id="form-result" class="form-result" role="status" aria-live="polite" hidden></div>
+      </form>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <a class="logo" href="index.html">aqish<span>.exe</span> ♡</a>
+    <p>Made with care, curiosity & a little pixel magic.</p>
+    <p class="footer-small">© <span data-year></span> Qis · Personal student portfolio</p>
+  </footer>
+
+</body>
+</html>
